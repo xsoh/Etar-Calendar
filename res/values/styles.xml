@@ -55,6 +55,7 @@
         <item name="calendar_date_banner_bgcolor">@color/calendar_date_banner_background</item>
         <item name="app_bar_color">@color/colorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/actionbar_cursor</item>
+        <item name="minus_button">@drawable/ic_menu_remove_field_holo_light</item>
     </style>
 
     <style name="Base.CalendarAppThemeWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -108,7 +109,7 @@
 
     <style name="MinusButton">
         <item name="android:background">?android:attr/selectableItemBackground</item>
-        <item name="android:src">@drawable/ic_menu_remove_field_holo_light</item>
+        <item name="android:src">?attr/minus_button</item>
     </style>
 
     <style name="MonthView_DayLabel">
@@ -317,13 +318,11 @@
     <style name="WidgetDayOfWeekStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">-5dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textAllCaps">true</item>
-
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">left</item>
-        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">1</item>
     </style>
 
     <style name="WidgetDateStyle">
@@ -331,8 +330,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">24sp</item>
         <item name="android:gravity">left</item>
-        <item name="android:layout_marginTop">-4dp</item>
-        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">-6dp</item>
+        <item name="android:maxLines">1</item>
     </style>
 
     <style name="NotificationPrimaryText" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
